@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(37, 131, 115, 0.4) 0%, transparent 45%), 
+        radial-gradient(circle at 90% 10%, rgba(81, 39, 116, 0.45) 0%, transparent 50%), 
+        radial-gradient(circle at 50% 80%, rgba(48, 83, 154, 0.35) 0%, transparent 50%); 
+        
+    background-size: 200% 200%;
+    background-attachment: fixed;
+    
+    /* Keeps the flowing effect active */
+    animation: flowBackground 10s ease-in-out infinite;
+    
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+.tracker-box {
+    width: 450px;
+    background: rgba(101, 125, 207, 0.96); 
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0px) !important;
+    -webkit-backdrop-filter: blur(0px) !important;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a855f7;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4a5568;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #e2e8f0;
+    font-size: 16px;
+}
+
+.inputs-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #5a67d8;
+    transform: scale(1.02); /* Slight pop effect on hover */
+}
+
+.calc-btn {
+    background: #48bb78; /* Green button for calculating */
+}
+
+.calc-btn:hover {
+    background: #38a169;
+}
+
+.list-section {
+    background: #f7fafc;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 25px 0;
+}
+
+.result-card {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.result-card div {
+    margin-bottom: 8px;
+}
+
+.small-note {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.green {
+    background: #c6f6d5;
+    color: #22543d;
+}
+
+.yellow {
+    background: #ffe082;
+    color: #744210;
+}
+
+.red {
+    background: #fed7d7;
+    color: #742a2a;
+}
+
+.hint {
+    color: #334155;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+@keyframes flowBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.welcome-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+
+
+.welcome-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.welcome-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.welcome-card h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+
+.start-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.start-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+.hide-welcome {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
