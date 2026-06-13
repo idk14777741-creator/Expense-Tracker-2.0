@@ -80,3 +80,4 @@ function startApp() {
     const welcomeScreen = document.getElementById("welcome-screen");
     welcomeScreen.classList.add("hide-welcome");
 }
+}
